@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Global breakpoints */
+:root {
+  --bp-sm: 600px;   /* Mobile phones */
+  --bp-md: 768px;   /* Tablets */
+  --bp-lg: 992px;   /* Small laptops / desktops */
+}
+
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  width: 1260px; /* Set container width */
+  margin: 52px auto; /* 52px Center horizontally and move 52px down */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center child elements */
+  gap: 20px; /* Maintain Figma spacing */
+  border: 2px solid #F5F5F5; /* Add border */
+  padding: 20px;
+  /*padding: auto; /* 20px; Optional: Adds spacing inside the border */
+  box-sizing: border-box; /* Ensures padding doesn't add to width */
+
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+    margin: 20px auto;
+    border: none;
+    padding: 0 16px;
+  }
+
+  .contact {
+    padding: 20px;
+  }
+
+  .contact-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-left,
+  .form-right {
+    margin: 0;
+    width: 100%;
+  }
+
+  input,
+  textarea {
+    width: 100% !important;
+  }
+
+  .cta-btn-email {
+    position: static;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .menu-items {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+

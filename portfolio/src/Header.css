@@ -1,0 +1,141 @@
+/* Header.css 
+.header {
+  width: 100%;
+  height: 112px;
+  background-color: #3B8DD9;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+*/
+
+.header {
+  width: 100%;
+  height: 112px;
+  background-color: white;
+ /*background-color: #3B8DD9;*/
+ /*color: white;*/
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999; /* ensures it's always on top */
+}
+
+
+.header-inner {
+  width: 1260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  background-color: #3B8DD9;
+  color: white;
+}
+
+.logo-frame {
+  flex: 1;
+  /*padding: 0 50px;*/
+}
+
+.logo {
+  width: 100px;
+}
+
+.menu-frame {
+  flex: 2;
+}
+
+.menu-items {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-item:hover {
+  color: #F9A825;
+}
+
+
+/* --- Responsive --- */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.bar.open:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.open:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .menu-frame {
+    position: absolute;
+    top: 112px;
+    right: 0;
+    width: 100%;
+    background-color: #3B8DD9;
+    display: none;
+    padding: 20px 0;
+    z-index: 1000; /* ensures it stays above hero etc. */
+  }
+
+  .menu-frame.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-items {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu-items li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: flex;
+    z-index: 1001;
+  }
+
+  .header-inner {
+    position: relative;
+    z-index: 1002;
+  }
+}
+
