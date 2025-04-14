@@ -1,10 +1,9 @@
 .about {
-  /*width: 100%;*/
-  width: 1260px;
+  width: 100%;
   max-width: 1260px;
   padding: 50px;
   margin: 0 auto;
-  text-align: left;
+  text-align: left; /* Change text alignment to left */
   box-sizing: border-box;
   padding-top: 112px; /* same height as header */
 }
@@ -13,6 +12,7 @@
   font-size: 60px;
   font-weight: 200;
   color: #F9A825;
+  text-align: left; /* Align title to left */
 }
 
 .about-intro,
@@ -21,41 +21,7 @@
   font-weight: 100;
   color: #3B8DD9;
   margin-top: 20px;
+  text-align: left; /* Align text to left */
+  width: 100%; /* Make sure it takes the full width */
+  max-width: 100%; /* Prevents wrapping issues */
 }
-
-/* Responsive styles */
-@media (max-width: 992px) {
-  .about {
-    width: 100%; /* Ensure the section takes up full width on small screens */
-    padding: 30px 20px; /* Adjust padding */
-  }
-
-  .about-title {
-    font-size: 45px;
-  }
-
-  .about-intro,
-  .about-desc {
-    font-size: 28px;
-  }
-}
-
-@media (max-width: 600px) {
-  .about {
-    width: 100%; /* Ensure the section takes up full width on smaller screens */
-    padding: 30px 20px; /* Adjust padding */
-  }
-
-  .about-title {
-    font-size: 36px;
-  }
-
-  .about-intro,
-  .about-desc {
-    font-size: 22px;
-  }
-}
-
-
-  
-  

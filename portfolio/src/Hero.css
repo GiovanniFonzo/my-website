@@ -1,40 +1,30 @@
 .hero {
   position: relative;
-  width: 1260px;
-  height: 1000px;
+  width: 100%;
+  height: 100vh;
   background-color: #3B8DD9;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 112px; /* same height as header */
+  overflow: hidden;
 }
 
 .hero h1, .hero h2 {
   color: white;
+  margin: 10px 0;
+  font-family: "Poppins", sans-serif;
 }
 
 .hero h1 {
-  font-family: "Poppins", sans-serif;
   font-size: 60px;
   font-weight: bold;
 }
 
 .hero h2 {
-  font-family: "Poppins", sans-serif;
   font-size: 30px;
   font-weight: bold;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-}
-
-.hero h1, .hero h2, .cta-btn {
-  margin: 10px 0;
 }
 
 .cta-btn {
@@ -49,25 +39,32 @@
   border-radius: 5px;
 }
 
-/* Icons Container */
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
 .icons-container {
   position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  pointer-events: none;
+  z-index: 1;
 }
 
-/* Individual Icons */
+/* Icon Circle Placement */
 .hero-icon {
   position: absolute;
   width: 64px;
   height: 64px;
-  filter: brightness(0) invert(1); /* Turns icons white */
+  filter: brightness(0) invert(1);
 }
 
-/* Arranging Icons in a Circle */
 .hero-icon:nth-child(1) { transform: rotate(0deg) translate(400px) rotate(0deg); }
 .hero-icon:nth-child(2) { transform: rotate(30deg) translate(400px) rotate(-30deg); }
 .hero-icon:nth-child(3) { transform: rotate(60deg) translate(400px) rotate(-60deg); }
@@ -81,23 +78,14 @@
 .hero-icon:nth-child(11) { transform: rotate(300deg) translate(400px) rotate(-300deg); }
 .hero-icon:nth-child(12) { transform: rotate(330deg) translate(400px) rotate(-330deg); }
 
-@media (max-width: 1260px) {
-  .hero {
-    width: 100%;
-    padding: 0 20px;
-    height: auto;
-    padding-top: 140px;
-  }
-
+/* Responsive */
+@media (max-width: 768px) {
   .icons-container {
     display: none;
   }
-}
 
-@media (max-width: 768px) {
   .hero h1 {
     font-size: 36px;
-    padding-top: 140px;
   }
 
   .hero h2 {

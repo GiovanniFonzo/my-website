@@ -3,8 +3,7 @@ import "./Projects.css";
 
 function Projects() {
   return (
-    <section> 
-      <div className="projects" id="projects">
+    <section id="projects" className="section projects">
       <h1 className="projects-title">projects.</h1>
       <p className="projects-intro">Check out my latest web applications.</p>
       <p className="projects-desc">
@@ -55,7 +54,6 @@ function Projects() {
           </div>
           <button className="cta-btn">JavaScript Application</button>
         </div>
-      </div>
       </div>
     </section>
   );

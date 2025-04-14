@@ -15,28 +15,26 @@ import js from "./assets/icons-image/JS.svg";
 
 const Hero = () => {
   return (
-    <section id="hero">
-      <div className="hero">
-        <div className="hero-content">
-          <h1>Hi, I'm Giovanni</h1>
-          <h2>I am a Web Developer</h2>
-          <button className="cta-btn">View My Projects</button>
-        </div>
+    <section className="hero">
+      <div className="hero-content">
+        <h1>Hi, I'm Giovanni</h1>
+        <h2>I am a Web Developer</h2>
+        <button className="cta-btn">View My Projects</button>
+      </div>
 
-        <div className="icons-container">
-          <img src={reactNative} className="hero-icon" alt="React Native" />
-          <img src={curlyBrackets} className="hero-icon" alt="Curly Brackets" />
-          <img src={sql} className="hero-icon" alt="SQL" />
-          <img src={github} className="hero-icon" alt="GitHub" />
-          <img src={git} className="hero-icon" alt="Git" />
-          <img src={restApi} className="hero-icon" alt="Rest API" />
-          <img src={php} className="hero-icon" alt="PHP" />
-          <img src={python} className="hero-icon" alt="Python" />
-          <img src={sourceCode} className="hero-icon" alt="Source Code" />
-          <img src={programming} className="hero-icon" alt="Programming" />
-          <img src={css3} className="hero-icon" alt="CSS3" />
-          <img src={js} className="hero-icon" alt="JavaScript" />
-        </div>
+      <div className="icons-container">
+        <img src={reactNative} className="hero-icon" alt="React Native" />
+        <img src={curlyBrackets} className="hero-icon" alt="Curly Brackets" />
+        <img src={sql} className="hero-icon" alt="SQL" />
+        <img src={github} className="hero-icon" alt="GitHub" />
+        <img src={git} className="hero-icon" alt="Git" />
+        <img src={restApi} className="hero-icon" alt="Rest API" />
+        <img src={php} className="hero-icon" alt="PHP" />
+        <img src={python} className="hero-icon" alt="Python" />
+        <img src={sourceCode} className="hero-icon" alt="Source Code" />
+        <img src={programming} className="hero-icon" alt="Programming" />
+        <img src={css3} className="hero-icon" alt="CSS3" />
+        <img src={js} className="hero-icon" alt="JavaScript" />
       </div>
     </section>
   );

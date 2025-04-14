@@ -116,6 +116,25 @@ textarea {
   border-radius: 5px;
 }
 
+
+/* Adjustments for large screen layouts */
+@media (min-width: 1600px) {
+  .contact-title {
+    font-size: 70px;
+  }
+
+  .contact p {
+    font-size: 25px;
+  }
+
+  .cta-btn-email {
+    font-size: 18px;
+  }
+}
+
+
+
+
 @media (max-width: 768px) {
   .contact {
     width: 100%;
