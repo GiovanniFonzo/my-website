@@ -15,7 +15,7 @@ import js from "./assets/icons-image/JS.svg";
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section id="hero" className="hero">
       <div className="hero-content">
         <h1>Hi, I'm Giovanni</h1>
         <h2>I am a Web Developer</h2>

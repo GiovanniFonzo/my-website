@@ -9,20 +9,18 @@
 }
 */
 
+/* Header.css */
 .header {
   width: 100%;
   height: 112px;
-  background-color: white;
- /*background-color: #3B8DD9;*/
- /*color: white;*/
+  background-color: white; /* Background color of the header */
   display: flex;
   justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999; /* ensures it's always on top */
+  z-index: 999; /* Ensures it's always on top */
 }
-
 
 .header-inner {
   width: 1260px;
@@ -30,13 +28,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
-  background-color: #3B8DD9;
+  background-color: #3B8DD9; /* Background color of the inner header */
   color: white;
 }
 
 .logo-frame {
   flex: 1;
-  /*padding: 0 50px;*/
 }
 
 .logo {
@@ -55,18 +52,23 @@
 }
 
 .nav-item {
-  color: white;
+  color: white; /* Default color for menu items */
   text-decoration: none;
   font-size: 18px;
+  transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
+/* Hover effect */
 .nav-item:hover {
-  color: #F9A825;
+  color: #F9A825; /* Golden color on hover */
 }
 
+/* Active item styles */
+.nav-item.active {
+  color: #F9A825; /* Golden color for active menu item */
+}
 
-/* --- Responsive --- */
-
+/* Hamburger Menu (Mobile) */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -106,7 +108,7 @@
     background-color: #3B8DD9;
     display: none;
     padding: 20px 0;
-    z-index: 1000; /* ensures it stays above hero etc. */
+    z-index: 1000;
   }
 
   .menu-frame.open {
